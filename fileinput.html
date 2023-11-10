@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sejong</title>
+    <link rel="stylesheet" href="styleforinputfile.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <h1>Sejong</h1>
+        </div>
+        <div class="middle">
+          <div>
+            <div class="box1">
+                <div class="textbox">
+                    <h1>Drag & Drop your <br> file here
+                    </h1>
+                    <p>
+                        Insert your recorded facial video to check emotional situation
+                    </p>
+                </div>
+            </div>
+            <div class="dropzone">
+                <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_3_125)">
+                        <path
+                            d="M10.6666 45.3333V50.6667C10.6666 52.0812 11.2285 53.4377 12.2287 54.4379C13.2289 55.4381 14.5855 56 16 56H48C49.4144 56 50.771 55.4381 51.7712 54.4379C52.7714 53.4377 53.3333 52.0812 53.3333 50.6667V45.3333"
+                            stroke="#023E8A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M18.6666 24L32 10.6667L45.3333 24" stroke="#023E8A" stroke-width="4"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M32 10.6667V42.6667" stroke="#023E8A" stroke-width="4" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_3_125">
+                            <rect width="64" height="64" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+
+                <p><span>Click to upload</span> or drag and drop your recorded file</p>
+                <input type="file" name="video" hidden>
+            </div>
+            <div class="url">
+                <label class="label" for="">Or upload from URL</label>
+                <div class="inputbox">
+                    <input placeholder="Add file URL" type="text">
+                    <button class="btn-primary">Upload</button>
+                </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+   
+</body>
+
+</html>
