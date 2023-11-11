@@ -20,11 +20,9 @@ dropzone.addEventListener('drop', (e) => {
     input.files = files;
   }
 
-  // Log the names of the dropped files to the console.
   console.log(files);
 });
 
-// Allow the dropzone to be clicked to upload a file.
 dropzone.addEventListener('click', (e) => {
   input.click();
   const file = input.files[0];
