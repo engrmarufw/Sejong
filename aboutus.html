@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Members</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <h1>Sejong</h1>
+            <a href="index.html"><button class="btn-primary">Go back</button></a>
+        </div>
+        <h1 class="teams">Our project team</h1>
+        <div class="showcase">
+            <h1 >Design Team</h1>
+            <div id="designers"></div>
+            <h1>Backend Team</h1>
+            <div id="backend"></div>
+            <h1 >Frontend Team</h1>
+            <div id="frontend"></div>
+        </div>
+    </div>
+
+    <script>
+        const teammembers = [
+            {
+                name: "Maruf Ahamed",
+                id: "32434",
+                photo: "https://i.ibb.co/tc2LsfT/01315560101-M-2-copy.jpg",
+                type: "Design Team"
+            },
+            {
+                name: "Maruf Ahamed",
+                id: "32434",
+                photo: "https://i.ibb.co/tc2LsfT/01315560101-M-2-copy.jpg",
+                type: "Design Team"
+            },
+            {
+                name: "Maruf Ahamed",
+                id: "32434",
+                photo: "https://i.ibb.co/tc2LsfT/01315560101-M-2-copy.jpg",
+                type: "Design Team"
+            },
+            {
+                name: "Maruf Ahamed",
+                id: "32434",
+                photo: "https://i.ibb.co/tc2LsfT/01315560101-M-2-copy.jpg",
+                type: "Design Team"
+            },
+            {
+                name: "Maruf Ahamed",
+                id: "32434",
+                photo: "https://i.ibb.co/tc2LsfT/01315560101-M-2-copy.jpg",
+                type: "Backend Team"
+            },
+            {
+                name: "Maruf Ahamed",
+                id: "32434",
+                photo: "https://i.ibb.co/tc2LsfT/01315560101-M-2-copy.jpg",
+                type: "Backend Team"
+            },
+            {
+                name: "Maruf Ahamed",
+                id: "32434",
+                photo: "https://i.ibb.co/tc2LsfT/01315560101-M-2-copy.jpg",
+                type: "Backend Team"
+            },
+            {
+                name: "Maruf Ahamed",
+                id: "32434",
+                photo: "https://i.ibb.co/tc2LsfT/01315560101-M-2-copy.jpg",
+                type: "Backend Team"
+            },
+            {
+                name: "Maruf Ahamed",
+                id: "32434",
+                photo: "https://i.ibb.co/tc2LsfT/01315560101-M-2-copy.jpg",
+                type: "Frontend Team"
+            },
+            {
+                name: "Maruf Ahamed",
+                id: "32434",
+                photo: "https://i.ibb.co/tc2LsfT/01315560101-M-2-copy.jpg",
+                type: "Frontend Team"
+            },
+            {
+                name: "Maruf Ahamed",
+                id: "32434",
+                photo: "https://i.ibb.co/tc2LsfT/01315560101-M-2-copy.jpg",
+                type: "Frontend Team"
+            },
+            {
+                name: "Maruf Ahamed",
+                id: "32434",
+                photo: "https://i.ibb.co/tc2LsfT/01315560101-M-2-copy.jpg",
+                type: "Frontend Team"
+            },
+        ];
+
+        const designers = document.getElementById('designers');
+        const backend = document.getElementById('backend');
+        const frontend = document.getElementById('frontend');
+        const designTeam = teammembers.filter(team => team.type === "Design Team");
+        const backendTeam = teammembers.filter(team => team.type === "Backend Team");
+        const frontendTeam = teammembers.filter(team => team.type === "Frontend Team");
+
+
+        function displayTeam() {
+
+            designTeam.map(member => {
+                designers.innerHTML += `
+                <div class="card">
+        <div class="image">
+            <img src=${member.photo} alt="">
+        </div>
+        <div class="text">
+            <h3>${member.name} </h3>
+            <p>${member.id}</p>
+            <p>${member.type}</p>
+        </div>
+    </div>
+                `
+
+            });
+            backendTeam.map(member => {
+                backend.innerHTML += `
+                <div class="card">
+        <div class="image">
+            <img src=${member.photo} alt="">
+        </div>
+        <div class="text">
+            <h3>${member.name} </h3>
+            <p>${member.id}</p>
+            <p>${member.type}</p>
+        </div>
+    </div>
+                `
+
+            });
+            frontendTeam.map(member => {
+                frontend.innerHTML += `
+                <div class="card">
+        <div class="image">
+            <img src=${member.photo} alt="">
+        </div>
+        <div class="text">
+            <h3>${member.name} </h3>
+            <p>${member.id}</p>
+            <p>${member.type}</p>
+        </div>
+    </div>
+                `
+
+            });
+        }
+
+        displayTeam();
+    </script>
+
+</body>
+
+</html>
